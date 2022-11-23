@@ -1,0 +1,36 @@
+.section-work {
+	display: none;
+	padding-top: 0;
+}
+.section-work__list {
+	display: flex;
+}
+.section-work__item {
+	position: relative;
+}
+.section-work__list .list + .list {
+	margin-left: 30px;
+}
+.section-work__img {
+	background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
+	mix-blend-mode: normal;
+	display: block;
+}
+.section-work__overley-title {
+	display: inline;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.18;
+	text-align: center;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+
+	color: var(--white-color);
+	background: rgba(47, 48, 58, 0.8);
+	padding-top: 27px;
+	padding-bottom: 27px;
+}

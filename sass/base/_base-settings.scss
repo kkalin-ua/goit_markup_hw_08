@@ -1,0 +1,52 @@
+.list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.link {
+	text-decoration: none;
+	margin: 0;
+}
+.container {
+	width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+:active,
+:hover,
+:focus {
+	outline: 0;
+	outline-offset: 0;
+}
+.section-title {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 1.16;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--black3-color);
+	margin-bottom: 50px;
+	width: 1200px;
+}
+.first {
+	margin-left: 0;
+}
+
+.visually-hidden {
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	margin: -1px;
+}

@@ -1,0 +1,21 @@
+html {
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+body {
+	font-family: "Roboto", "Open Sans";
+	color: var(--main-color);
+}
+h1,
+h2,
+h3,
+ul,
+p,
+li {
+	padding: 0;
+	margin: 0;
+}

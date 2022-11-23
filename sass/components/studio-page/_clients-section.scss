@@ -1,0 +1,41 @@
+/* section-clients */
+
+.clients__list {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.clients__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 92px;
+	width: 170px;
+	border: 1px #afb1b8 solid;
+	border-radius: 4px;
+	color: var(--text-secondary);
+	margin-left: 30px;
+
+	transition: color 250ms, border-color 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		border-color: var(--blue-color);
+		color: var(--blue-color);
+		fill: var(--blue-color);
+	}
+
+	&:focus .client__logo {
+		fill: var(--blue-color);
+	}
+}
+.client__logo {
+	padding: 16px 32px;
+	fill: var(--text-secondary);
+
+	&:hover,
+	&:focus {
+		fill: var(--blue-color);
+	}
+}
