@@ -1,30 +1,45 @@
 // === section-advantage ===
-// .section-advantage__list {
-// 	display: flex;
+.section-advantage__list {
+	@media screen and (min-width: 768px) {
+		display: flex;
+		// justify-content: center;
+		// flex-wrap: wrap;
+		gap: 30px;
+	}
+	
 
-// 	& .list + .list {
-// 		margin-left: 30px;
-// 	}
-// }
+	// & .list + .list {
+	// 	margin-left: 30px;
+	// }
+}
 .section-advantage__item {
-	width: 100%;
-
+	
 	&::before {
 		content: "";
 		display: block;
 		height: 120px;
-		width: 450px;
-
-		// min-width: 450px;
-		// max-width: 480px;
 		background-color: #f5f4fa;
 		border-radius: 4px;
 		margin-bottom: 30px;
 		background-repeat: no-repeat;
-		background-size: contain;
 		background-position: center;
+
+		@media screen and (min-width: 480px) {
+			width: 450px;
+		}
+		@media screen and (min-width: 768px) {
+			width: 354px;
+		}
+		@media screen and (min-width: 1200px) {
+			width: 270px;
+		}
+	
 	}
+
+
+
 }
+
 .icon-antena::before {
 	background-image: url(../images/antena.png);
 	background-size: 66px 70px;
@@ -43,7 +58,10 @@
 }
 
 .section-advantage__h3 {
-	padding-left: 115px;
+	display: block;
+	text-align: center;
+	// width: 270px;
+	// padding-left: 115px;	
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.14;
@@ -52,6 +70,7 @@
 	margin-bottom: 10px;
 }
 .section-advantage__p {
+	// max-width: 450px;
 	text-align: start;
 	font-weight: 400;
 	font-size: 14px;

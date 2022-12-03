@@ -23,7 +23,7 @@
 	font-weight: 900;
 	font-size: 26px;
 	line-height: 1.36;
-	// text-align: center;
+	text-align: center;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--white-color);
@@ -31,12 +31,13 @@
 
 	padding-top: 118px;
 	
-	padding-left: 60px;
-	
+		
 }
 
 .section-btn {
-	display: inline-block;
+	display: block;
+	margin: 0 auto;
+
 	text-align: center;
 	font-family: inherit;
 	background: var(--blue-color);
@@ -44,8 +45,7 @@
 	min-width: 216px;
 	min-height: 50px;
 	padding: 10px 32px;
-	margin-left: 140px;
-
+	
 	border: none;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
