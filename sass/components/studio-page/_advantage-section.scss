@@ -3,7 +3,7 @@
 	@media screen and (min-width: 768px) {
 		display: flex;
 		// justify-content: center;
-		// flex-wrap: wrap;
+		flex-wrap: wrap;
 		gap: 30px;
 	}
 	
@@ -40,7 +40,7 @@
 
 }
 
-.icon-antena::before {
+.icon-anten::before {
 	background-image: url(../images/antena.png);
 	background-size: 66px 70px;
 }
@@ -68,6 +68,17 @@
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+
+	@media screen and (min-width: 480px) {
+		width: 450px;
+	}
+	@media screen and (min-width: 768px) {
+		width: 354px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 270px;
+	}
+
 }
 .section-advantage__p {
 	// max-width: 450px;
@@ -77,4 +88,15 @@
 	line-height: 1.71;
 	letter-spacing: 0.03em;
 	color: var(--gray-color);
+
+	@media screen and (min-width: 480px) {
+		width: 450px;
+	}
+	@media screen and (min-width: 768px) {
+		width: 354px;
+	}
+	@media screen and (min-width: 1200px) {
+		width: 270px;
+	}
+
 }

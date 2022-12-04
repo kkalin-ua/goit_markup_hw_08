@@ -12,12 +12,12 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	gap: 30px;
+
 	height: 92px;
-	width: 210px;
 	border: 1px #afb1b8 solid;
 	border-radius: 4px;
 	color: var(--text-secondary);
-	gap: 30px;
 
 	transition: color 250ms, border-color 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -31,6 +31,18 @@
 
 	&:focus .client__logo {
 		fill: var(--blue-color);
+	}
+
+	@media screen and (min-width: 480px) {
+		width: 210px;
+	}
+	@media screen and (min-width: 768px) {
+		width: 226px;
+
+	}
+	@media screen and (min-width: 1200px) {
+		width: 170px;
+
 	}
 
 }
