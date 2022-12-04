@@ -709,6 +709,16 @@ header {
 .container-footer .footer-links__item:focus, .container-footer .footer-links__item:hover {
   background: var(--blue-color);
 }
+.container-footer .footer-social {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .container-footer .footer-social {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .container-footer .footer-social {
     margin-left: 70px;
