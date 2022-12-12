@@ -1,9 +1,14 @@
 /* ======header==== */
 
 header {
-	
+	position: relative;
+  
 	border-bottom: 1px solid #ececec;
 	background-color: #fff;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		}
 }
 
 .page-header__item {
@@ -78,6 +83,30 @@ header {
 		color: var(--blue-color);
 	}
 }
+
+
+.header-navigation {
+  // @media screen and (min-width: 480px) and (max-width: 768px)
+  @media screen and (max-width: 767px)
+  
+  {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .page-header__link {
 
 	// display: block;
@@ -98,12 +127,15 @@ header {
 .header-adress__icon {
 	fill: currentColor;
 	vertical-align: text-top;
-	// margin-right: 10px;
+	margin-right: 10px;
 	width: 16px;
 	height: 16px;
 }
 .page-header {
-	position: relative;
+	// @media screen and (max-width: 767px) {
+	// 	display: none;
+	// }
+	
 	@media screen and (min-width: 768px) {
 		display: flex;
 		margin-top: 10px;
@@ -117,6 +149,14 @@ header {
 		}
 	}
 }
+
+.header-adres {
+	margin-left: auto;
+
+	// @media screen and (max-width: 767px) {
+	// 	display: none;
+	// }
+}
 .header-adress {
 	@media screen and (min-width: 768px) {
 		// display: flex;
@@ -125,8 +165,6 @@ header {
 	
 		& .header-adress__items:not(:last-child) {
 			margin-bottom: 10px;
-
-			// margin-right: 30px;
 		}
 	
 	}
@@ -137,16 +175,20 @@ header {
 		margin-top: 20px;
 	
 		& .header-adress__items:not(:last-child) {
-			// margin-bottom: 10px;
-
 			margin-right: 50px;
 		}
 	
-	}
+	}}
 
+.page-header,
+.header-adres {
 
-	
+	@media screen and (max-width: 767px) {
+		display: none;
+		}
 }
+
+
 .header-navigation,
 .header-container {
 
@@ -156,3 +198,12 @@ header {
 
 	}
 }
+
+
+.header-container {
+  position: relative;
+//   padding: 16px 15px;
+
+}
+
+

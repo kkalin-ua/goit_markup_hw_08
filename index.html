@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="X-UA-Compatible">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
@@ -26,39 +26,110 @@
 
 		<!-- HEADER -->
 		<header>
-			<div class="container header-container">
-				<nav class="header-navigation link">
-					<a class="header-logo link" href="./index.html">
-						Web
-						<span class="header-logo__text">Studio</span>
-					</a>
+      <div class="header-container container">
+        <nav class="header-navigation link">
 
-					<ul class="page-header list">
-						<li class="page-header__item"><a class="page-header__link link activ" href="./index.html">Студія</a></li>
-						<li class="page-header__item"><a class="page-header__link link" href="./portfolio.html">Портфоліо</a></li>
-						<li class="page-header__item"><a class="page-header__link link" href="#">Контакти</a></li>
-					</ul>
+          <a class="header-logo link" href="./index.html">
+            Web
+            <span class="header-logo__text">Studio</span>
+          </a>
+
+          <div>
+            <ul class="page-header list">
+              <li class="page-header__item"><a class="page-header__link link activ" href="./index.html">Студія</a></li>
+              <li class="page-header__item"><a class="page-header__link link" href="./portfolio.html">Портфоліо</a></li>
+              <li class="page-header__item"><a class="page-header__link link" href="#">Контакти</a></li>
+            </ul>
+          </div>
+
 				</nav>
 
-				<ul class="header-adress">
-					<li class="header-adress__items list">
-						<a class="header-adress__mail link" href="mailto:info@devstudio.com">
-							<svg class="header-adress__icon">
-								<use href="./images/svg/symbol-defs.svg#icon-envelope"></use>
-							</svg>
-							info@devstudio.com
-						</a>
-					</li>
-					<li class="header-adress__items list">
-						<a class="header-adress__tel link" href="tel:+380961111111">
-							<svg class="header-adress__icon">
-								<use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
-							</svg>
-							+38 096 111 11 11
-						</a>
-					</li>
-				</ul>
-			</div>
+        <div class="header-adres">
+          <ul class="header-adress">
+            <li class="header-adress__items list">
+              <a class="header-adress__mail link" href="mailto:info@devstudio.com">
+                <svg class="header-adress__icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="header-adress__items list">
+              <a class="header-adress__tel link" href="tel:+380961111111">
+                <svg class="header-adress__icon">
+                  <use href="./images/svg/symbol-defs.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+        <!-- Меню -->
+        <div class="menu">
+          <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-menu" width="40" height="40">
+            <use href="./images/svg/symbol-defs.svg#icon-menu-mobile"></use>
+          </svg>
+          </button>
+
+        </div>
+
+
+        <!-- Меню контейнер -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu">
+            <svg class="close-icon" width="40" height="40">
+              <use href="./images/svg/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+          </button>
+    
+          <ul class="mobile-menu">
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link mobile-menu__link current-page link" href=""
+                >Студія</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a class="mobile-menu__link link" href="">Контакти</a>
+            </li>
+          </ul>
+    
+          <ul class="mobile-contacts list">
+            <li class="mobile-contacts__item">
+              <a href="" class="mobile-contacts__tel link">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-contacts__item">
+              <a href="" class="mobile-contacts__mail link">info@devstudio.com</a>
+            </li>
+          </ul>
+    
+          <ul class="mobile-socials list">
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link link">Instagram</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link link">Twitter</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link link">Facebook</a>
+            </li>
+            <li class="mobile-socials__item">
+              <a href="" class="mobile-socials__link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
 		</header>
 
 		<main>
@@ -533,7 +604,7 @@
 						</div>
 
 						<div>
-							<label for="soglashenie">
+							<label for="soglashenie" class="soglashenie">
 								<input
 									tabindex="5"
 									class="soglashenie-checkbox"
@@ -556,6 +627,8 @@
 			</div>
 		</div>
 
+      
 		<script src="./js/modal.js"></script>
+		<script src="./js/menu.js"></script>
 	</body>
 </html>

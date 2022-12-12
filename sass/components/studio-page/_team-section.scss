@@ -1,3 +1,6 @@
+
+
+
 .section-team {
 	// display: none;
 	background: var(--white2-color);
@@ -8,7 +11,7 @@
 		display: flex;
 		justify-content: center;
 		flex-wrap: wrap;
-		gap: 30px 15px;
+		gap: 30px;
 	}
 
 	@media screen and (min-width: 1200px) {
@@ -52,10 +55,11 @@
 
 }
 .section-team__img {
-	width: 450px;
-	height: 460px;
+	display: block;
+	width: 100%;
+	height: auto;
 
-	background: url(4853.jpg);
+	background: var(--gray-color);
 	border-radius: 0px;
 	margin-bottom: 30px;
 
