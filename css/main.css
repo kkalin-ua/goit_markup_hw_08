@@ -1082,8 +1082,20 @@ header {
   background-size: cover;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-  background-image: -webkit-image-set(url(../images/cap-background.jpg) 1x, url(../images/cap-background-x2.jpg) 2x, url(../images/cap-background-x3.jpg) 3x);
-  background-image: image-set(url(../images/cap-background.jpg) 1x, url(../images/cap-background-x2.jpg) 2x, url(../images/cap-background-x3.jpg) 3x);
+  background-image: -webkit-image-set(url(../images/hero-mobile.jpg) 1x, url(../images/hero-mobile-x2.jpg) 2x);
+  background-image: image-set(url(../images/hero-mobile.jpg) 1x, url(../images/hero-mobile-x2.jpg) 2x);
+}
+@media screen and (min-width: 768px) {
+  .section-cap {
+    background-image: -webkit-image-set(url(../images/hero-tablet.jpg) 1x, url(../images/hero-tablet-x2.jpg) 2x);
+    background-image: image-set(url(../images/hero-tablet.jpg) 1x, url(../images/hero-tablet-x2.jpg) 2x);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-cap {
+    background-image: -webkit-image-set(url(../images/hero-desktop.jpg) 1x, url(../images/hero-desktop-x2.jpg) 2x);
+    background-image: image-set(url(../images/hero-desktop.jpg) 1x, url(../images/hero-desktop-x2.jpg) 2x);
+  }
 }
 
 .section-cap__h1 {
