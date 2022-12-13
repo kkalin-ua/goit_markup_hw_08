@@ -1,22 +1,41 @@
 /* ===== main ===== */
 
 .section-cap {
-	
-	// text-align: center;
-	// padding-top: 200px;
-	// padding-bottom: 200px;
-	// width: 480px;
-	// margin-left: auto;
-	// margin-right: auto;
-	// margin-top: 80px;
-
+	// max-width: 1600px;
+	padding-bottom: 118px;
 	background: var(--black2-color);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
-	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/cap-background.jpg);
-	padding-bottom: 118px;
-	// max-width: 1600px;
+	// background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+	// 					url(../images/cap-background.jpg);
+	background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+	background-image: image-set(url(../images/cap-background.jpg) 1x,
+						url(../images/cap-background-x2.jpg) 2x,
+						url(../images/cap-background-x3.jpg) 3x,
+	)
+	
+
+	// @media screen and (min-device-pixel-ratio: 2),
+	// 	screen and (min-resolution: 192dpi),
+	// 	screen and (min-resolution: 2dppx) {
+	// 	.section-cap {
+	// 		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+	// 						url(../images/cap-background-x2.jpg);
+	// 	}
+	// }
+
+	// @media screen and (min-device-pixel-ratio: 3),
+	// 	screen and (min-resolution: 288dpi),
+	// 	screen and (min-resolution: 3dppx) {
+	// 	.section-cap {
+	// 		background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+	// 						url(../images/cap-background-x3.jpg);
+	// 	}
+	// }
+
+
+
 }
 
 .section-cap__h1 {

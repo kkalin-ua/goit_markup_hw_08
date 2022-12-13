@@ -1075,13 +1075,15 @@ header {
 
 /* ===== main ===== */
 .section-cap {
+  padding-bottom: 118px;
   background: var(--black2-color);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/cap-background.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/cap-background.jpg);
-  padding-bottom: 118px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
+  background-image: -webkit-image-set(url(../images/cap-background.jpg) 1x, url(../images/cap-background-x2.jpg) 2x, url(../images/cap-background-x3.jpg) 3x);
+  background-image: image-set(url(../images/cap-background.jpg) 1x, url(../images/cap-background-x2.jpg) 2x, url(../images/cap-background-x3.jpg) 3x);
 }
 
 .section-cap__h1 {
@@ -1270,7 +1272,6 @@ header {
 }
 
 .section-work__img {
-  background: url(close-up-image-programer-working-his-desk-office_1098-18707.jpg);
   mix-blend-mode: normal;
   display: block;
 }
@@ -1296,6 +1297,18 @@ header {
   background: var(--white2-color);
 }
 
+@media screen and (max-width: 479px) {
+  .section-team__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .section-team__list {
     display: -webkit-box;
@@ -1335,8 +1348,19 @@ header {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .section-team__item {
+    width: 80vw;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 479px) {
+  .section-team__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .section-team__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1357,10 +1381,15 @@ header {
 .section-team__img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 460px;
   background: var(--gray-color);
   border-radius: 0px;
   margin-bottom: 30px;
+}
+@media screen and (max-width: 479px) {
+  .section-team__img {
+    height: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .section-team__img {
@@ -1424,6 +1453,13 @@ header {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 479px) {
+  .member-link__item {
+    height: 40px;
+    width: 40px;
+    margin-left: -5px;
+  }
+}
 .member-link__item:hover, .member-link__item:focus {
   background-color: var(--blue-color);
 }
@@ -1438,6 +1474,12 @@ header {
 }
 :focus .links-icon {
   fill: var(--white-color);
+}
+@media screen and (max-width: 479px) {
+  .links-icon {
+    height: 40px;
+    width: 40px;
+  }
 }
 
 /* section-clients */
@@ -1472,7 +1514,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   height: 92px;
-  border: 1px #afb1b8 solid;
+  border: 2px #afb1b8 solid;
   border-radius: 4px;
   color: var(--text-secondary);
   -webkit-transition: color 250ms, border-color 250ms;
@@ -1511,6 +1553,11 @@ header {
 .client__logo:hover, .client__logo:focus {
   fill: var(--blue-color);
 }
+@media screen and (max-width: 479px) {
+  .client__logo {
+    padding: 0;
+  }
+}
 
 /* ===== portfolio.html ====== */
 .section-project__list {
@@ -1527,10 +1574,16 @@ header {
 .section-project__item {
   background: var(--white-color);
   border: 1px solid #eeeeee;
+  margin: auto;
 }
 .section-project__item:hover, .section-project__item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+@media screen and (max-width: 479px) {
+  .section-project__item {
+    height: 60vw;
+  }
 }
 @media (min-width: 768px) {
   .section-project__item {
@@ -1553,7 +1606,11 @@ header {
   display: block;
   width: 100%;
   height: 294px;
-  /* margin-bottom: 20px; */
+}
+@media screen and (max-width: 479px) {
+  .section-project-img {
+    height: 75vw;
+  }
 }
 
 .thumb-hidden {

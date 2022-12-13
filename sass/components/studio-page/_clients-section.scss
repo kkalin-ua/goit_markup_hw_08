@@ -20,7 +20,7 @@
 	align-items: center;
 	
 	height: 92px;
-	border: 1px #afb1b8 solid;
+	border: 2px #afb1b8 solid;
 	border-radius: 4px;
 	color: var(--text-secondary);
 
@@ -59,4 +59,10 @@
 	&:focus {
 		fill: var(--blue-color);
 	}
+
+	@media screen and (max-width: 479px) {
+		padding: 0;	
+	}
+
+
 }
