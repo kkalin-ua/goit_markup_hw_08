@@ -1095,6 +1095,7 @@ header {
   .section-cap {
     background-image: -webkit-image-set(url(../images/hero-desktop.jpg) 1x, url(../images/hero-desktop-x2.jpg) 2x);
     background-image: image-set(url(../images/hero-desktop.jpg) 1x, url(../images/hero-desktop-x2.jpg) 2x);
+    padding-bottom: 200px;
   }
 }
 
@@ -1108,6 +1109,17 @@ header {
   color: var(--white-color);
   margin-bottom: 40px;
   padding-top: 118px;
+}
+@media screen and (min-width: 768px) {
+  .section-cap__h1 {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-cap__h1 {
+    padding-top: 200px;
+    font-size: 44px;
+  }
 }
 
 .section-btn {

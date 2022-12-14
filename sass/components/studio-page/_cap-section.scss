@@ -18,10 +18,9 @@
 	
 	@media screen and (min-width: 1200px) {
 		background-image: image-set(url(../images/hero-desktop.jpg) 1x,
-									url(../images/hero-desktop-x2.jpg) 2x)
-								}
-	// url(../images/hero-desktop-x2.jpg) 2x
-
+									              url(../images/hero-desktop-x2.jpg) 2x);
+    padding-bottom: 200px;
+	}
 
 	// @media screen and (min-device-pixel-ratio: 2),
 	// 	screen and (min-resolution: 192dpi),
@@ -58,8 +57,16 @@
 	margin-bottom: 40px;
 
 	padding-top: 118px;
-	
-		
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+	}
+
+  @media screen and (min-width: 1200px) {
+		padding-top: 200px;
+    font-size: 44px;
+	}
+
 }
 
 .section-btn {
