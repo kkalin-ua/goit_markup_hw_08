@@ -1572,8 +1572,9 @@ header {
 }
 
 .client__logo {
-  padding: 16px 32px;
   fill: var(--text-secondary);
+  width: 100px;
+  height: 100px;
 }
 .client__logo:hover, .client__logo:focus {
   fill: var(--blue-color);
